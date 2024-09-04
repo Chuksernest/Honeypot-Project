@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Update system
+sudo apt-get update && sudo apt-get upgrade -y
+
+# Install required packages
+sudo apt-get install -y git curl docker.io docker-compose
+
+# Enable Docker services to run at startup
+sudo systemctl enable docker
+sudo systemctl start docker
+
+# Verify Docker is running
+sudo systemctl status docker
+
+# Clone the T-Pot repository
+cd /opt
+sudo git clone https://github.com/telekom-security/tpotce.git
+cd tpotce
+
+# Execute the installation script
+sudo ./install.sh --type=auto
+
+# Open necessary ports
+sudo ufw allow 64297/tcp  # Kibana dashboard
+sudo ufw allow 64295/tcp  # SSH (custom port)
+sudo ufw allow 9000/tcp   # Portainer
+
+# Enable firewall
+sudo ufw enable
+
