@@ -1,0 +1,386 @@
+{
+    "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g;2",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:a2rdj9nb:nnogtwn0:InstalledLocation",
+            "@type": [
+                "Property",
+                "Cloud",
+                "Location"
+            ],
+            "displayName": {
+                "en": "Installed Location"
+            },
+            "name": "InstalledLocation",
+            "schema": "geopoint"
+        },
+        {
+            "@id": "dtmi:a2rdj9nb:nnogtwn0:InstalledLocationName",
+            "@type": [
+                "Property",
+                "Cloud",
+                "StringValue"
+            ],
+            "displayName": {
+                "en": "Installed Location Name"
+            },
+            "name": "InstalledLocationName",
+            "schema": "string"
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:electricity;2",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "electricity"
+            },
+            "name": "electricity",
+            "schema": {
+                "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:electricity:schema;2",
+                "@type": "Object",
+                "fields": [
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:electricity:schema:voltage;2",
+                        "displayName": {
+                            "en": "voltage"
+                        },
+                        "name": "voltage",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:electricity:schema:current;2",
+                        "displayName": {
+                            "en": "current"
+                        },
+                        "name": "current",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:electricity:schema:power;2",
+                        "displayName": {
+                            "en": "power"
+                        },
+                        "name": "power",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:electricity:schema:energyConsumed;2",
+                        "displayName": {
+                            "en": "energyConsumed"
+                        },
+                        "name": "energyConsumed",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:electricity:schema:powerFactor;2",
+                        "displayName": {
+                            "en": "powerFactor"
+                        },
+                        "name": "powerFactor",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:electricity:schema:frequency;2",
+                        "displayName": {
+                            "en": "frequency"
+                        },
+                        "name": "frequency",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:electricity:schema:timestamp;2",
+                        "displayName": {
+                            "en": "timestamp"
+                        },
+                        "name": "timestamp",
+                        "schema": "dateTime"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:gas;2",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "gas"
+            },
+            "name": "gas",
+            "schema": {
+                "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:gas:schema;2",
+                "@type": "Object",
+                "fields": [
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:gas:schema:flowRate;2",
+                        "displayName": {
+                            "en": "flowRate"
+                        },
+                        "name": "flowRate",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:gas:schema:consumption;2",
+                        "displayName": {
+                            "en": "consumption"
+                        },
+                        "name": "consumption",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:gas:schema:pressure;2",
+                        "displayName": {
+                            "en": "pressure"
+                        },
+                        "name": "pressure",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:gas:schema:timestamp;2",
+                        "displayName": {
+                            "en": "timestamp"
+                        },
+                        "name": "timestamp",
+                        "schema": "dateTime"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:water;2",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "water"
+            },
+            "name": "water",
+            "schema": {
+                "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:water:schema;2",
+                "@type": "Object",
+                "fields": [
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:water:schema:flowRate;2",
+                        "displayName": {
+                            "en": "flowRate"
+                        },
+                        "name": "flowRate",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:water:schema:consumption;2",
+                        "displayName": {
+                            "en": "consumption"
+                        },
+                        "name": "consumption",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:water:schema:pressure;2",
+                        "displayName": {
+                            "en": "pressure"
+                        },
+                        "name": "pressure",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:water:schema:timestamp;2",
+                        "displayName": {
+                            "en": "timestamp"
+                        },
+                        "name": "timestamp",
+                        "schema": "dateTime"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:temperature;2",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "temperature"
+            },
+            "name": "temperature",
+            "schema": {
+                "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:temperature:schema;2",
+                "@type": "Object",
+                "fields": [
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:temperature:schema:indoor;2",
+                        "displayName": {
+                            "en": "indoor"
+                        },
+                        "name": "indoor",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:temperature:schema:outdoor;2",
+                        "displayName": {
+                            "en": "outdoor"
+                        },
+                        "name": "outdoor",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:temperature:schema:timestamp;2",
+                        "displayName": {
+                            "en": "timestamp"
+                        },
+                        "name": "timestamp",
+                        "schema": "dateTime"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:meterId;2",
+            "@type": [
+                "Property",
+                "StringValue"
+            ],
+            "displayName": {
+                "en": "meterId"
+            },
+            "name": "meterId",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:location;2",
+            "@type": [
+                "Property",
+                "StringValue"
+            ],
+            "displayName": {
+                "en": "location"
+            },
+            "name": "location",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:status;2",
+            "@type": [
+                "Property",
+                "StringValue"
+            ],
+            "displayName": {
+                "en": "status"
+            },
+            "name": "status",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:model;2",
+            "@type": [
+                "Property",
+                "StringValue"
+            ],
+            "displayName": {
+                "en": "model"
+            },
+            "name": "model",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:manufacturer;2",
+            "@type": [
+                "Property",
+                "StringValue"
+            ],
+            "displayName": {
+                "en": "manufacturer"
+            },
+            "name": "manufacturer",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:installationDate;2",
+            "@type": [
+                "Property",
+                "DateTimeValue"
+            ],
+            "displayName": {
+                "en": "installationDate"
+            },
+            "name": "installationDate",
+            "schema": "date",
+            "writable": false
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:lastMaintenance;2",
+            "@type": [
+                "Property",
+                "DateTimeValue"
+            ],
+            "displayName": {
+                "en": "lastMaintenance"
+            },
+            "name": "lastMaintenance",
+            "schema": "date",
+            "writable": false
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:firmwareVersion;2",
+            "@type": [
+                "Property",
+                "StringValue"
+            ],
+            "displayName": {
+                "en": "firmwareVersion"
+            },
+            "name": "firmwareVersion",
+            "schema": "string",
+            "writable": false
+        },
+        {
+            "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:connectivity;2",
+            "@type": "Property",
+            "displayName": {
+                "en": "connectivity"
+            },
+            "name": "connectivity",
+            "schema": {
+                "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:connectivity:schema;2",
+                "@type": "Object",
+                "fields": [
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:connectivity:schema:type;2",
+                        "displayName": {
+                            "en": "type"
+                        },
+                        "name": "type",
+                        "schema": "string"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:connectivity:schema:signalStrength;2",
+                        "displayName": {
+                            "en": "signalStrength"
+                        },
+                        "name": "signalStrength",
+                        "schema": "double"
+                    },
+                    {
+                        "@id": "dtmi:adatumEnergy:Smart_Meter_v1_1_44g:connectivity:schema:ipAddress;2",
+                        "displayName": {
+                            "en": "ipAddress"
+                        },
+                        "name": "ipAddress",
+                        "schema": "string"
+                    }
+                ]
+            },
+            "writable": false
+        }
+    ],
+    "displayName": {
+        "en": "Smart Meter v1.1"
+    },
+    "extends": [
+        "dtmi:adatumEnergy:Smart_Meter_v1_1_6je;1",
+        "dtmi:smartMeterMonitoring2302hrqniku:Smart_Meter_v1_0_1cv;1"
+    ],
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+}
